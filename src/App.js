@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
 import NavbarBrand from 'react-bootstrap/NavbarBrand'
 import { Nav } from 'react-bootstrap';
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
@@ -35,7 +36,7 @@ class App extends React.Component {
     return(
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-0" bg="transparent" expand="lg">
+          <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Didier Peran Ganthier</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
@@ -46,6 +47,7 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+          <Footer/>
         </Container>
       </Router>
     );
