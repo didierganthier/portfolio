@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './App.css';
-import NavbarBrand from 'react-bootstrap/NavbarBrand'
 import { Nav } from 'react-bootstrap';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -23,7 +22,7 @@ class App extends React.Component {
       ],
       home: {
         title: 'Be Limitless',
-        subtitle: 'Creative thinking never ends',
+        subtitle: 'Always deliver more than expected',
         text: 'Checkout my projects below'
       },
       about: {
