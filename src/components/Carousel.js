@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from '../components/Card'
 
-import battery from '../assets/images/battery.jpg';
+import battery from '../assets/images/battery.png';
 import Haiti from '../assets/images/haiti.png';
 import buddies from '../assets/images/buddies.png';
 import didier from '../assets/images/didier.jpeg';
