@@ -4,11 +4,8 @@ import Card from '../components/Card'
 
 import battery from '../assets/images/battery.png';
 import virus from '../assets/images/virus.png';
-import buddies from '../assets/images/buddies.png';
 import didier from '../assets/images/didier.jpeg';
 import leaf from '../assets/images/leaf.jpg';
-import popcorn from '../assets/images/popcorn.png';
-import wallet from '../assets/images/wallet.png';
 import { Container, Row } from 'react-bootstrap';
 
 class Carousel extends React.Component {
