@@ -43,36 +43,12 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 3,
-                    title: 'Buddies Gram',
-                    subTitle: 'Instagram Clone using Flutter',
-                    imgSrc: buddies,
-                    link: 'https://github.com/didierganthier/buddies_gram',
-                    selected: false
-                },
-                {
-                    id: 4,
                     title: 'Leaf Recognition',
                     subTitle: 'Leaf Recognition Model',
                     imgSrc: leaf,
                     link: 'https://github.com/didierganthier/leaf_recognition',
                     selected: false
                 },
-                {
-                    id: 5,
-                    title: 'Wallet Home',
-                    subTitle: 'Expense Manager Application',
-                    imgSrc: wallet,
-                    link: 'https://github.com/didierganthier/WalletHome',
-                    selected: false
-                },
-                {
-                    id: 6,
-                    title: 'Flickster',
-                    subTitle: 'Movie Trailer Application',
-                    imgSrc: popcorn,
-                    link: 'https://github.com/didierganthier/Flickster-2',
-                    selected: false
-                }
             ]
         }
     }
