@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Card from '../components/Card'
+
 import battery from '../assets/images/battery.jpg';
 import Haiti from '../assets/images/haiti.png';
 import buddies from '../assets/images/buddies.png';
@@ -7,6 +9,7 @@ import didier from '../assets/images/didier.jpeg';
 import leaf from '../assets/images/leaf.jpg';
 import popcorn from '../assets/images/popcorn.png';
 import wallet from '../assets/images/wallet.png';
+import { Container, Row } from 'react-bootstrap';
 
 class Carousel extends React.Component {
 
@@ -74,9 +77,35 @@ class Carousel extends React.Component {
         }
     }
 
+    handleCardClick = (id, card) => {
+        let items = [...this.state.items];
+
+        items[id].selected = items[id].selected ? false : true;
+
+        items.forEach(item => {
+            if(item.id !== id){
+                item.selected = false;
+            }
+        });
+
+        this.setState({
+            items
+        });
+    }
+
+    makeItems = (items) => {
+        return items.map(item => {
+            return <Card item={item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id}/>
+        })
+    }
+
     render(){
         return(
-            <p>Carousel Works!</p>
+            <Container fluid={true}>
+                <Row className='justify-content-around'>
+                    {this.makeItems(this.state.items)}
+                </Row>
+            </Container>
         );
     }
 }
