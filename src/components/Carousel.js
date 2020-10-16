@@ -3,7 +3,7 @@ import React from 'react';
 import Card from '../components/Card'
 
 import battery from '../assets/images/battery.png';
-import Haiti from '../assets/images/haiti.png';
+import virus from '../assets/images/virus.png';
 import buddies from '../assets/images/buddies.png';
 import didier from '../assets/images/didier.jpeg';
 import leaf from '../assets/images/leaf.jpg';
@@ -21,7 +21,7 @@ class Carousel extends React.Component {
                     id: 0,
                     title: 'COVID Tracker Haïti',
                     subTitle: 'COVID Cases tracker application for Haïti',
-                    imgSrc: Haiti,
+                    imgSrc: virus,
                     link: 'https://github.com/didierganthier/track_covid',
                     selected: false
                 },
@@ -78,6 +78,8 @@ class Carousel extends React.Component {
     }
 
     handleCardClick = (id, card) => {
+        console.log(id);
+
         let items = [...this.state.items];
 
         items[id].selected = items[id].selected ? false : true;
@@ -95,7 +97,7 @@ class Carousel extends React.Component {
 
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id}/>
+            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id}/>
         })
     }
 
